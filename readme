@@ -1,0 +1,30 @@
+ ******************************************************************************************************************************************
+ *			A lire attentivement avant de l'utilisation de notre application de gestion de bibliothèque			       *
+ ******************************************************************************************************************************************
+
+Installation 
+- Vous devez d'abord créer la base de données.
+	
+	Pour cela positionnez vous dans le dossier /createdatabase
+	Et tapez la commande nano createdb.c
+		modifiez cette ligne
+			17 => mysql_real_connect(&mysql, "127.0.0.1", "debian-sys-maint", "FHwmWbTuAwgXn89F", "", 3306, NULL, 0)
+		avec les informations de connexion à la base de données.
+	Ensuite faite ./CREATEDB
+	Après cela vous près à utilisation notre application
+	
+	NB: La partie de l'installation se fait une seule fois sur une même machine.
+		Si vous le fait plusieurs il y'aura aucun desagrament c'est à dire la
+		base de données créé depuis la première fois ne serait pas ecrasée et 
+		il y'aura aucune perte de données.
+		
+Utilisation
+
+	Pour lancer notre application positionnez vous dans le repertoire 
+	/Gestion_de_bibliotheque/source 
+	Puis faite ./GEST
+
+Si tout c'est bien passé normalement vous devez voir un menu s'afficher
+Maintenant vous avez la possibilité de choisir une option en fonction de 
+	l'opération que vous desirez effectuer.
+Si vous avez fini fermez l'application en choisissant l'option 0.
